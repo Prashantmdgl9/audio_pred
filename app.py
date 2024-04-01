@@ -148,6 +148,7 @@ def classify():
     emotions1={1:'Neutral', 2:'Calm', 3:'Happy', 4:'Sad', 5:'Angry', 6:'Fear', 7:'Disgust',8:'Surprise'}
     res=get_predict_feat("wav_file.wav")
     predictions=loaded_model.predict(res)
+    st.markdown(predictions)
     y_pred = encoder2.inverse_transform(predictions)
     st.header("The speaker in the audio is:")
     st.title(y_pred[0][0])
