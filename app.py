@@ -101,7 +101,7 @@ def mfcc(data,sr,frame_length,hop_length,flatten:bool=True):
 
 
 def rmse(data,frame_length=2048,hop_length=512):
-    rmse=librosa.feature.rms(data, frame_length=frame_length,hop_length=hop_length)
+    rmse=librosa.feature.rms(y = data, frame_length=frame_length,hop_length=hop_length)
     return np.squeeze(rmse)
 
 
