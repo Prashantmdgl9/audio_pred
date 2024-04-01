@@ -92,7 +92,7 @@ def zcr(data,frame_length,hop_length):
     zcr=librosa.feature.zero_crossing_rate(data,frame_length=frame_length,hop_length=hop_length)
     return np.squeeze(zcr)
 def rmse(data,frame_length,hop_length):
-    frame_length=2048,hop_length=512
+    #frame_length=2048,hop_length=512
     rmse=librosa.feature.rms(data)
     return np.squeeze(rmse)
 def mfcc(data,sr,frame_length,hop_length,flatten:bool=True):
