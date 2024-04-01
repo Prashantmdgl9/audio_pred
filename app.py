@@ -75,7 +75,7 @@ def mel_gram(signal, sampling_rate, slider_length = 512):
 
 
 
-model_path = '/Users/prashantmudgal/Documents/Audio_emotions/model_working/'
+model_path = 'model_working/'
 
 
 def zcr(data,frame_length,hop_length):
