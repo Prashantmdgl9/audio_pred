@@ -30,8 +30,8 @@ def save_file(sound_file):
     a = sound_file.name
     return a
 
-datapath = '/Users/prashantmudgal/Documents/Audio_emotions/data/ravdess/speech/'
-datapath2 = '/Users/prashantmudgal/Documents/Audio_emotions/'
+#datapath = '/Users/prashantmudgal/Documents/Audio_emotions/data/ravdess/speech/'
+#datapath2 = '/Users/prashantmudgal/Documents/Audio_emotions/'
 
 
 def save_file(sound_file):
