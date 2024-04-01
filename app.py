@@ -16,10 +16,10 @@ def main():
     if page == "Identify":
         st.title(" Speech Emotion Recognition")
         identify()
-    elif page == "About":
-        about()
-    elif page == "Homepage":
-        homepage()
+    #elif page == "About":
+    #    about()
+    #elif page == "Homepage":
+    #    homepage()
 
 
 
