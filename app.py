@@ -96,7 +96,7 @@ def zcr(data,frame_length,hop_length):
 
 
 def mfcc(data,sr,frame_length,hop_length,flatten:bool=True):
-    mfcc=librosa.feature.mfcc(data,sr=sr)
+    mfcc=librosa.feature.mfcc(y = data,sr=sr)
     return np.squeeze(mfcc.T)if not flatten else np.ravel(mfcc.T)
 
 
