@@ -32,6 +32,15 @@ def save_file(sound_file):
 
 datapath = '/Users/prashantmudgal/Documents/Audio_emotions/data/ravdess/speech/'
 datapath2 = '/Users/prashantmudgal/Documents/Audio_emotions/'
+
+
+def save_file(sound_file):
+    # save your sound file in the right folder by following the path
+    with open(os.path.join(sound_file.name),'wb') as f:
+         f.write(sound_file.getbuffer())
+    a = sound_file.name
+    return a
+
 def identify():
 
     st.subheader("Choose an audio file")
@@ -43,11 +52,12 @@ def identify():
             audio_bytes = uploaded_file.read()
             st.audio(audio_bytes, format='audio/wav')
             #st.write("success")
-            sound = AudioSegment.from_file(datapath+ uploaded_file.name)
+            x = save_file(uploaded_file)
+            sound = AudioSegment.from_file(x)
             #st.write("success2")
-            sound.export(datapath2+'wav_file'+'.wav', format="wav")
-            wav_file = datapath2+'wav_file'+'.wav'
-            y, sr = librosa.load(wav_file)
+            z = sound.export('wav_file'+'.wav', format="wav")
+            #wav_file = datapath2+'wav_file'+'.wav'
+            y, sr = librosa.load(z)
             plot_spectrogram(y, sr)
 
 
