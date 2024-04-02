@@ -214,8 +214,12 @@ def classify():
     predictions=loaded_model.predict(res)
     #st.markdown(predictions)
     y_pred = encoder2.inverse_transform(predictions)
-    st.header("The speaker in the audio is:")
+    
+    st.header("The valence state of audio can be classified as:")
+    
+    st.header("The emotional state of the driver in the audio is:")
     st.title(y_pred[0][0])
+   
     #prediction("wav_file.wav")
 
 
