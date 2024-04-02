@@ -215,17 +215,11 @@ def classify():
     #st.markdown(predictions)
     y_pred = encoder2.inverse_transform(predictions)
     st.header("The speaker in the audio is:")
-    if y_pred[0][0] == "fear":
-        st.title("Fearful")
-    elif y_pred[0][0] == "surprise":
-        st.title("Surprised")
-    elif y_pred[0][0] == "disgust":
-        st.title("Disgusted")
-    else:
-        st.tite(y_pred[0][0]
-        
-    #st.title(y_pred[0][0])
+    st.title(y_pred[0][0])
     #prediction("wav_file.wav")
+
+
+
 
 
 if __name__ == "__main__":
