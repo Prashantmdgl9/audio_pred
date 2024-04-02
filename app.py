@@ -215,14 +215,14 @@ def classify():
     #st.markdown(predictions)
     y_pred = encoder2.inverse_transform(predictions)
     if y_pred[0][0] == "neutral" or  y_pred[0][0] == "happy" or y_pred[0][0] == "surprise":
-        valence = "Positive"
+        valence = "positive"
     else:
-        valence = "Negative"
+        valence = "negative"
     st.header("The valence state of audio can be classified as:")
-    st.title(valence)
+    st.subheader(valence)
     
     st.header("The emotional state of the driver in the audio is:")
-    st.title(y_pred[0][0])
+    st.subheader(y_pred[0][0])
    
     #prediction("wav_file.wav")
 
