@@ -220,10 +220,9 @@ def classify():
     elif y_pred[0][0] == "surprise":
         st.title("Surprised")
     elif y_pred[0][0] == "disgust":
-         st.title("Disgusted")
+        st.title("Disgusted")
     else:
         st.tite(y_pred[0][0]
-        
         
     #st.title(y_pred[0][0])
     #prediction("wav_file.wav")
