@@ -13,11 +13,11 @@ from PIL import Image
 
 def main():
 
-    page = st.sidebar.selectbox("App Selections", ["Homepage", "About", "Identify"])
-    if page == "Identify":
-        st.title(" Speech Emotion Recognition")
+    page = st.sidebar.selectbox("App Selections", ["Homepage", "Speech Emotion Recognition", "Emotional States"])
+    if page == "Emotional States":
+        st.title("Emotional States of the Drivers")
         identify()
-    elif page == "About":
+    elif page == "Speech Emotion Recognition":
         about()
     elif page == "Homepage":
         homepage()
@@ -26,11 +26,18 @@ def main():
 
 def about():
     set_png_as_page_bg('emotes.png')
-    st.title("About present work")
-    st.subheader("Billions of dollars are spent in oil rig operations including the safety on deck, quick analysis, efficiency etc. While multiple systems and heavy machinery are"
-     " used for various tasks at hand, there always are avenues that can be explored to bring the efficiency and safety at optimum level.")
-    st.markdown("Multiple sounds are generated at the rigs during the extraction process and classifying the sounds correctly can help the engineers in reinforcing their"
-    " initial estimates and quick decisioning.")
+    st.title("You don't want a distracted driver on the road, do you?")
+    st.divider()
+    st.subheader("What is Speech Emotion Recognition?")
+    st.markdown("Speech emotion recognition (SER) is the process of detecting and analyzing emotional states from speech signals. It employs machine learning techniques to classify emotions such as happiness, sadness, anger, or neutral states. SER finds applications in human-computer interaction, customer service, healthcare, education, security, entertainment, and psychological research.")
+    st.subheader("What are we doing differently?")
+    st.markdown("There are multiple solutions in the market that are trained on various data and offering insights about the emotional states but...")
+    st.caption(":blue[We trained] our models not only of contextual data but also on benchmarked ones such as Crema, Ravdess, Tess, and Savee to get robust models") 
+    st.caption("We aren't only generating the seven standard states -  neutral, sad, happy, surprised, afraid, angry, and disgusted but also predicting the :blue[valence] - positive vs negative emotion and :blue[arousal] - energetic vs passive expressions")
+    st.divider()
+    st.markdown("
+    
+    
 
 
 import base64
