@@ -217,7 +217,7 @@ def classify():
     
     st.header("The valence state of audio can be classified as:")
     
-    st.header("The emotional state of the driver in the audio is:", :blue[ y_pred[0][0]])
+    st.header("The emotional state of the driver in the audio is:", y_pred[0][0])
     #st.title(y_pred[0][0])
    
     #prediction("wav_file.wav")
