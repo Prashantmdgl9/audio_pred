@@ -7,6 +7,7 @@ import librosa.display
 import numpy as np
 from tensorflow.keras.models import Sequential, model_from_json
 import pickle
+from PIL import Image
 
 
 
