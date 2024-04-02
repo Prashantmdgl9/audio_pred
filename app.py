@@ -214,7 +214,7 @@ def classify():
     predictions=loaded_model.predict(res)
     #st.markdown(predictions)
     y_pred = encoder2.inverse_transform(predictions)
-    if y_pred[0][0] == "neutral"|  y_pred[0][0] == "happy"| y_pred[0][0] == "surprise":
+    if y_pred[0][0] == "neutral" or  y_pred[0][0] == "happy" or y_pred[0][0] == "surprise":
         valence = "Positive"
     else:
         valence = "Negative"
