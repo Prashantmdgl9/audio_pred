@@ -223,8 +223,12 @@ def classify():
     
     st.header("The emotional state of the driver in the audio is:")
     st.subheader(y_pred[0][0])
-    if valence == "negative":
+    if valence == "negative" and y_pred[0][0] == "angry":
         st.subheader("The driver is on the road and could be in a :red[foul mood]. Please place a call immediately!")
+    elif valence == "negative":
+        st.subheader("The driver might be agitated, please monitor the situation")
+    else:
+        pass
    
     #prediction("wav_file.wav")
 
