@@ -35,7 +35,7 @@ def about():
     st.divider()
     st.divider()
     st.divider()
-    st.markdown(":blue[_We trained_] our models not only of contextual data but also on benchmarked ones such as Crema, Ravdess, Tess, and Savee to get robust models") 
+    st.markdown(":blue[We _trained_] our models not only of contextual data but also on benchmarked ones such as Crema, Ravdess, Tess, and Savee to get robust models") 
     st.markdown("We aren't only generating the seven standard states -  neutral, sad, happy, surprised, afraid, angry, and disgusted but also predicting the :green[_valence_] - positive vs negative emotion and :blue[_arousal_] - energetic vs passive expressions")
     st.divider()
     
