@@ -16,10 +16,32 @@ def main():
     if page == "Identify":
         st.title(" Speech Emotion Recognition")
         identify()
-    #elif page == "About":
-    #    about()
-    #elif page == "Homepage":
-    #    homepage()
+    elif page == "About":
+        about()
+    elif page == "Homepage":
+        homepage()
+
+
+
+
+def homepage():
+    html_temp = """
+    <html>
+    <head>
+    <style>
+    body {
+      background-color: #fe2631;
+    }
+    </style>
+    </head>
+    <body>
+    </body>
+    """
+    st.markdown(html_temp, unsafe_allow_html = True)
+
+    image = Image.open('home63.png')
+    st.image(image, use_column_width = True)
+
 
 
 
