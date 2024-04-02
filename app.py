@@ -31,17 +31,6 @@ def about():
      " used for various tasks at hand, there always are avenues that can be explored to bring the efficiency and safety at optimum level.")
     st.markdown("Multiple sounds are generated at the rigs during the extraction process and classifying the sounds correctly can help the engineers in reinforcing their"
     " initial estimates and quick decisioning.")
-    audio_file = open("machine_6.wav", 'rb')
-    audio_bytes = audio_file.read()
-    st.audio(audio_bytes, format='audio/wav')
-
-    st.markdown("In the present POC, A trained and a very deep neural network classifies the sounds obtained from oil rigs into 10 cohorots:")
-    Final_Sound = ['Water Vapour Blowout', 'Methane', 'Benzene', 'Heavy Gas', 'Hydrogen Sulphide', 'Oil Drill Rig Exterior', 'Operator Pump', 'Dieseling' , 'Fracturing', 'Hydraulic']
-    df = pd.DataFrame(Final_Sound, columns=['Sound Class'])
-    st.table(df)
-    st.divider()
-    st.markdown("**The model was trained on the real production data and achieved an accuracy rate of 87% in classifying the sounds it heard for the first time**")  
-    #st.subheader("Blowout, Gas Emission, Rock Bed, Heavy Gas, Heavy Metal, Oil Drill Rig Exterior, Operatre Pump, Dieseling, Fracturing, Hydraulic")
 
 
 import base64
