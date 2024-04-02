@@ -226,7 +226,7 @@ def classify():
     if (y_pred[0][0] == "angry" and valence == "negative"):
         st.subheader("The driver is on the road and could be in a :red[foul mood]. Please place a call immediately!")
     elif (y_pred[0][0] == "sad" or y_pred[0][0] == "fear" or y_pred[0][0] == "disgust") and valence == "negative":
-        st.subheader("The driver might be agitated, please monitor the situation")
+        st.subheader("The driver might be distracted, please :red[monitor] the situation")
     else:
         pass
    
